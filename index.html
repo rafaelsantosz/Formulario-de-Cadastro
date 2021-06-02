@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+        <h1>Faça seu cadastro</h1>
+        <p>e garanta acesso à plataforma</p>
+
+        <form>
+            <img src="logo.png" alt="logo">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="name" required placeholder="Digite seu nome">
+            </div>
+
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Digite seu email">
+            </div>
+
+            <div class="campo">
+                <label for="dataNasc">Data de Nascimento</label>
+                <input type="date" name="nome" id="dataNasc" required>
+            </div>
+
+            <div class="campo">
+                <label for="area">Qual sua área atual?</label>
+                <select name="area" id="area">
+                   <option disabled selected>Selecione</option>
+                   <option>Estudante</option>
+                   <option>Estagiário</option>
+                   <option>Front-End</option>
+                   <option>Back-End</option>
+                   <option>FullStack</option>
+                   <option>Outra</option> 
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="check">Desejo receber por email:</label>
+                <div class="checkOpt">
+                    <label for="prom">
+                        <input type="checkbox" id="prom" name="prom" checked> Promoções e Descontos
+                    </label>
+                    <label for="nov">
+                        <input type="checkbox" id="nov" name="nov"> Novidades e Atualizações
+                    </label>
+                    <label for="dest">
+                        <input type="checkbox" id="dest" name="dest"> Destaques e Rankings da semana
+                    </label>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="termos"><a href="#"><strong>Termos e Condições de Uso</strong></a></label>
+                <div class="checkOpt">
+                    <label class="checkOpt">
+                        <input type="checkbox" name="termos" id="termos" required><strong> Aceito*</strong> 
+                    </label>
+                </div>
+            </div>
+
+            <button class="botao">Cadastrar</button>
+        </form>
+</body>
+</html>

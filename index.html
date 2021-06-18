@@ -12,15 +12,19 @@
         <p>e garanta acesso à plataforma</p>
 
         <form>
-            <img src="logo.png" alt="logo">
             <div class="campo">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="name" required placeholder="Digite seu nome">
+                <input type="text" name="nome" id="name" required placeholder="Digite seu nome...">
             </div>
 
             <div class="campo">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" required placeholder="Digite seu email">
+                <input type="email" name="email" id="email" required placeholder="Digite seu email...">
+            </div>
+
+            <div class="campo">
+                <label for="senha">Crie uma senha (Máx: 10 caracteres)</label>
+                <input type="password" name="senha" id="senha" required placeholder="Digite uma senha..." maxlength="10">
             </div>
 
             <div class="campo">
@@ -59,7 +63,7 @@
             <div class="campo">
                 <label for="termos"><a href="#"><strong>Termos e Condições de Uso</strong></a></label>
                 <div class="checkOpt">
-                    <label class="checkOpt">
+                    <label>
                         <input type="checkbox" name="termos" id="termos" required><strong> Aceito*</strong> 
                     </label>
                 </div>

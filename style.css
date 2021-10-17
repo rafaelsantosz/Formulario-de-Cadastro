@@ -6,52 +6,53 @@
 }
 
 body{
-    background-color: #8087CD;
+    background-color: #4EA5D9;
     font-family: "Ubuntu", sans-serif;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: whitesmoke;
-}
-
-h1{
-    margin-top: 20px;
-    font-size: 40px;
-}
-
-p{
-    font-size: 18px;
+    justify-content: center;
 }
 
 form{
-    background-color: #181c31e8;
+    background-color: #232020;
     border-radius: 6px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin: 10px 0 10px 0;
     padding:25px;
-    width: 45%;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
 }
 
-.campo label{
-    display: block;
-    color: white;
-    font-size: 27px;
-    margin-top: 20px;
+form h1{
+    text-align: center;
     margin-bottom: 10px;
 }
 
-.campo input[type="text"], .campo input[type="email"], .campo input[type="password"]{
-    padding: 15px;
-    width: 90%;
+h1::after{
+    content: '';
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 55%;
+    height: 2px;
+    background-color: whitesmoke;
+}
+
+label{
+    font-size: 1.5rem;
+    margin: 15px 0 5px 0;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    padding: 12px;
     border: 1px;
     border-radius: 8px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
     box-shadow: 2px 2px 2px black;
-    font-size: 15px;
-    outline: 0;
+    font-size: 1rem;
 }
 
-.campo input[type="date"], .campo select{
+input[type="date"], select{
     padding: 10px;
     width: 40%;
     border: 1px;
@@ -61,38 +62,38 @@ form{
     outline: 0;
 }
 
-.campo option{
-    font-size: 15px;
+option{
+    font-size: 1rem;
+}
+
+.checkOpt{
+    display: flex;
+    flex-direction: column;
 }
 
 .checkOpt label{
-    font-size: 19.5px;
-    margin-top: 10px;
-    margin-bottom: 17px;
+    font-size: 1.2rem;
+    margin-top: 2px;
 }
 
 a{
     color: whitesmoke;
 }
 
-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+input[type="submit"]{
     padding: 15px;
-    width: 55%;
     background: #1b991b;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 20px;
     border: 1px;
     border-radius: 8px;
     box-shadow: 2px 2px 2px black;
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 1rem;
     text-shadow: 1px 1px 1px black;
 }
 
-button:hover{
+input[type="submit"]:hover{
     background: #105e10;
     box-shadow: inset 2px 2px 2px black;
     text-shadow: none;
